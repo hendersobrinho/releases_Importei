@@ -1,15 +1,22 @@
-# Importei: versões para instalar
+# Importei
 
-Este repositório só guarda os pacotes de instalação do Importei. O programa instalado procura aqui a versão mais nova ao abrir e se atualiza sozinho.
+Programa que lê extratos bancários em PDF, classifica os lançamentos e gera o arquivo para o sistema contábil.
 
-## Instalar
+## Baixar e instalar
 
-No PowerShell, rode:
+**[Baixar o instalador (Importei-Setup.exe)](https://github.com/hendersobrinho/releases_Importei/releases/latest/download/Importei-Setup.exe)**
 
-```powershell
-irm https://raw.githubusercontent.com/hendersobrinho/releases_Importei/main/Install-Importei.ps1 | iex
-```
+1. Abra o arquivo baixado.
+2. Se o Windows mostrar **"O Windows protegeu o computador"**, clique em **Mais informações** e depois em **Executar assim mesmo**. O aviso aparece porque o instalador ainda não tem assinatura digital.
+3. Clique em **Avançar** até o fim. Não precisa de administrador.
+4. Abra o Importei pelo atalho da área de trabalho.
 
-O instalador baixa a última versão, confere o SHA-256 do pacote, copia para `%LOCALAPPDATA%\Programs\Importei` e cria um atalho na área de trabalho. Feche o Importei antes de instalar por cima de uma versão aberta.
+O programa se atualiza sozinho: quando sair uma versão nova, ele avisa ao abrir e instala.
 
-Os pacotes estão em [Releases](../../releases).
+## Desinstalar
+
+Configurações do Windows › Aplicativos › Aplicativos instalados › Importei › Desinstalar. Seus dados (empresas, regras e lançamentos) ficam guardados em `%LOCALAPPDATA%\Importei` e não são apagados.
+
+## Todas as versões
+
+Veja em [Releases](../../releases).
